@@ -21,7 +21,7 @@ function App() {
     <main>
       <section className="menu section">
         <div className="title">
-          <h2>Mummy दा Dabha</h2>
+          <h2>Mummy दा Dhaba</h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
