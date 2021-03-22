@@ -4,7 +4,7 @@ const Menu = ({ items }) => {
   return (
     <div className="section-center">
       {items.map((menuItem) => {
-        const { id, title, img, desc, fav } = menuItem;
+        const { id, fav, title, img, desc, url } = menuItem;
         return (
           <article key={id} className="menu-item">
             <img src={img} alt={title} className="photo" />
@@ -14,7 +14,9 @@ const Menu = ({ items }) => {
                 {fav && <h5 className="fav">preferred*</h5>}
               </header>
               <p className="item-text">{desc}</p>
-              <h6><a href="https://www.youtube.com/" >Watch now</a></h6>
+              <h6>
+                <a href={url}>Watch now</a>
+              </h6>
             </div>
           </article>
         );
